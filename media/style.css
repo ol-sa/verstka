@@ -1,0 +1,164 @@
+        *{margin: 0;padding: 0;}
+        
+        html {
+        	height: 100%;
+        }
+        
+    header, nav, section, main, article, aside, footer,h1 {
+    display: block;
+    }
+        
+    body {
+    height: 100%; 	
+    max-width: 1300px;        
+	margin: 0 auto;		              
+    font-size: 16pt;
+	font-family: verdava, helvetica, sans-serif;
+	}
+	header{
+	background-color: #99ccff;
+	line-height: 70px;
+	}
+	footer{
+	background-color: #99ccff;
+	line-height: 100px;
+	position: relative;
+	width: 100%;
+	margin: -100px 0 0;
+	}
+	h1{
+	text-align: center;
+	font-size: 1.38em;
+	font-weight: bold;
+	}
+	ul{
+	padding-left: 48px;
+	padding-top: 25px;
+	font-size: 1.13em;
+	}
+	a{
+	color: blue;
+	}
+	.fotka{
+	float: left;
+	margin: 10px 30px;
+	}
+	p{
+	font-size: 1.13em;
+	}
+	.nazva{
+	height: 80px;
+	line-height: 80px;
+	}
+	.abzac{
+	padding: 10px 30px;
+	}
+	/*------------------ верстка --------------------*/
+	.maxw{
+	min-width: 240px;
+	max-width: 1300px;
+	margin: auto;
+	}
+	
+	.wrapper{
+	height: 100%;
+	min-height: 100%;
+	height: auto;
+	position: relative;
+	}
+	
+	.navbar{
+	background-color: #f0e68c;
+	width: 250px;
+	position: absolute;
+	min-height: calc(100% - 170px);
+	height: auto;
+	float: left;
+	
+	}
+	.nav_header{
+	font-weight: bold;
+	padding-top: 40px;
+	padding-left: 15px;
+	font-size: 1,56em;
+	}
+	
+	.content{
+	margin-left: 250px;
+	background: url('ball.png');
+	position: relative;
+	background-repeat: repeat-y;
+	background-position: right top;
+	min-height: calc(100% - 170px);
+	height: auto;
+	width: auto;
+	}
+		
+	.header_footer{
+	color: blue;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+	}
+		
+	.main{
+	min-height: calc(100% - 170px);
+	height: auto;
+	
+	}
+	.clear{
+	height: 100px;
+	clear: both;
+	}
+	.group: after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	}
+	/*--------------- адаптивная часть ---------------*/
+	@media screen and (max-width: 600px)
+	{
+	
+	.navbar{
+	width: 100%;
+	position: relative;
+	height: auto;
+	}
+	.content{
+	margin-left: 0;
+	}
+	.fotka{
+	width: calc(100% - 20px);
+	margin: 0;
+	}
+	.text{
+	background: url('ball.png');
+	position: relative;
+	background-repeat: repeat-y;
+	background-position: right top;
+	float: left;
+	width: auto;
+	}
+	img{
+	width: 100%;
+	padding: 10px;
+	}
+	.nazva{
+	width: 100%;
+	float: left;
+	}
+	body{
+	font-size: 10pt;
+	}
+	.header_footer{
+	font-size: 1em;
+	}
+	}
+	
+	
+	
+	
+	
+	
